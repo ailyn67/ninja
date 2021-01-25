@@ -34,9 +34,24 @@
        this.salud+=10;
      }
       }
-    const ninja1 =new Ninja("Nagato",10,2,2);
-    const ninja2 =new Ninja("Fuji", 500);
-    const ninja3 =new Ninja("Muchizuki", 60,30,20);
+
+    
+    class Sensei extends Ninja {
+      constructor(nombre, salud=200, velocidad=10, fuerza=10, sabiduria=10,) {
+          super(nombre, salud, velocidad, fuerza);
+          this.sabiduria = sabiduria;
+    }
+  
+  speakWisdom(){
+    console.log("Relajado y Alerta parece imposible algunas veces, pero cuanto más practico más entiende mi cuerpo.")
+    drinkSake();
+   }
+  }
+
+  const ninja1 =new Ninja("Nagato",10,2,2);
+  const ninja2 =new Ninja("Fuji", 500);
+  const ninja3 =new Ninja("Muchizuki", 60,30,20);
+  const superSensei =new Sensei("Master Splinter"); 
 
   </script>
 </body>
