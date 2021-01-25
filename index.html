@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ninja</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <script>
+    class Ninja {
+
+      constructor(nombre, salud, velocidad=3, fuerza=3) {
+        // acá recibo los atributos
+        this.nombre = nombre;
+        this.salud = salud;
+        this.velocidad = velocidad;
+        this.fuerza = fuerza;
+      }
+     showName(){
+       console.log(`Nombre de Ninja: ${this.nombre}`)
+     }
+     showState(){
+       console.log(`Nombre: ${this.name}
+                    Nivel de salud:${this.salud}
+                    Nivel de velocidad: ${this.velocidad}
+                    Nivel de fuerza: ${this.fuerza}`);
+     }
+     showSake(){
+       this.salud+=10;
+     }
+      }
+    const ninja1 =new Ninja("Nagato",10,2,2);
+    const ninja2 =new Ninja("Fuji", 500);
+    const ninja3 =new Ninja("Muchizuki", 60,30,20);
+
+  </script>
+</body>
+
+</html>
